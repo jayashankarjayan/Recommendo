@@ -1,0 +1,461 @@
+.mediaViewInfo {
+	--web-view-name: Book Solo;
+	--web-view-id: Book_Solo;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-scale-on-resize: true;
+	--web-center-horizontally: true;
+	--web-application: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Book_Solo;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Book_Solo {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	background-color: rgba(227,234,249,1);
+	overflow: hidden;
+	--web-view-name: Book Solo;
+	--web-view-id: Book_Solo;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-scale-on-resize: true;
+	--web-center-horizontally: true;
+	--web-application: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+#OOUIL_BC {
+	position: absolute;
+	width: 547px;
+	height: 817px;
+	left: 108px;
+	top: 139px;
+	overflow: visible;
+}
+#OOUIL_BC_t {
+	filter: drop-shadow(2px 3px 10px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	width: 547px;
+	height: 817px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Blurb {
+	position: absolute;
+	width: 1060px;
+	height: 516px;
+	left: 768px;
+	top: 282px;
+	overflow: visible;
+}
+#About_Book {
+	position: absolute;
+	width: 1060px;
+	height: 516px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Book_Descr {
+	fill: rgba(255,255,255,1);
+}
+.Book_Descr {
+	position: absolute;
+	overflow: visible;
+	width: 1060px;
+	height: 516px;
+	left: 0px;
+	top: 0px;
+}
+#Book_Blurb_Content {
+	position: absolute;
+	width: 973px;
+	height: 417px;
+	left: 44px;
+	top: 51px;
+	overflow: visible;
+}
+#One_Of_Us_Is_Lying {
+	left: 2px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 474px;
+	height: 56px;
+	text-align: left;
+	font-family: Gotham;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	color: rgba(0,0,0,1);
+}
+#Karen_M_McManus {
+	left: 2px;
+	top: 71px;
+	position: absolute;
+	overflow: visible;
+	width: 328px;
+	height: 38px;
+	text-align: left;
+	font-family: Gotham;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	color: rgba(0,0,0,1);
+}
+#Pay_close_attention_and_you_mi {
+	left: 0px;
+	top: 151px;
+	position: absolute;
+	overflow: visible;
+	width: 974px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Gotham;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: rgba(0,0,0,1);
+}
+#RSBtnG {
+	position: absolute;
+	width: 347px;
+	height: 142px;
+	left: 1528px;
+	top: 224px;
+	display: none;
+	overflow: visible;
+}
+#RScoreBttn {
+	fill: rgba(255,117,117,1);
+}
+.RScoreBttn {
+	position: absolute;
+	overflow: visible;
+	width: 347px;
+	height: 142px;
+	left: 0px;
+	top: 0px;
+}
+#Recommendo_Score {
+	left: 44px;
+	top: 23px;
+	position: absolute;
+	overflow: visible;
+	width: 261px;
+	height: 26px;
+	text-align: left;
+	font-family: Gotham;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(255,255,255,1);
+}
+#n_7100 {
+	left: 44px;
+	top: 58px;
+	position: absolute;
+	overflow: visible;
+	width: 261px;
+	height: 66px;
+	text-align: center;
+	font-family: Gotham;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 60px;
+	color: rgba(255,255,255,1);
+}
+#RS_Ribbon {
+	position: absolute;
+	width: 2937.787px;
+	height: 2899.55px;
+	left: 1598.213px;
+	top: -2359.55px;
+	overflow: visible;
+}
+#Ribbon {
+	position: absolute;
+	width: 209px;
+	height: 318.55px;
+	left: -12.213px;
+	top: 2581px;
+	overflow: visible;
+}
+#Sleeve1 {
+	fill: rgba(255,117,117,1);
+	stroke: rgba(194,194,194,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Sleeve1 {
+	overflow: visible;
+	position: absolute;
+	width: 93.432px;
+	height: 155.923px;
+	left: 12.213px;
+	top: 164.455px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Sleeve2 {
+	fill: rgba(255,117,117,1);
+	stroke: rgba(194,194,194,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Sleeve2 {
+	overflow: visible;
+	position: absolute;
+	width: 93.428px;
+	height: 155.923px;
+	left: 86.213px;
+	top: 164.455px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#OuterC {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(194,194,194,1);
+	stroke-width: 2px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.OuterC {
+	overflow: visible;
+	position: absolute;
+	width: 209px;
+	height: 209px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#InnerC {
+	fill: rgba(255,117,117,1);
+}
+.InnerC {
+	position: absolute;
+	overflow: visible;
+	width: 167px;
+	height: 167px;
+	left: 21px;
+	top: 21px;
+}
+#Text {
+	position: absolute;
+	width: 148px;
+	height: 66px;
+	left: 18.287px;
+	top: 2647.275px;
+	overflow: visible;
+}
+#Recommendo_Score_bc {
+	left: 3px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 144px;
+	height: 15px;
+	text-align: center;
+	font-family: Gotham;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgba(255,255,255,1);
+}
+#n_7100_bd {
+	left: 0px;
+	top: 22px;
+	position: absolute;
+	overflow: visible;
+	width: 149px;
+	height: 44px;
+	text-align: center;
+	font-family: Gotham;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(255,255,255,1);
+}
+#Back_Button {
+	position: absolute;
+	width: 306px;
+	height: 94px;
+	left: 1522px;
+	top: 940px;
+	overflow: visible;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: view;
+	--web-action-target: Books;
+	cursor: pointer;
+}
+#BtnBase {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.BtnBase {
+	position: absolute;
+	overflow: visible;
+	width: 306px;
+	height: 94px;
+	left: 0px;
+	top: 0px;
+}
+#Back {
+	left: 101px;
+	top: 25px;
+	position: absolute;
+	overflow: visible;
+	width: 105px;
+	height: 44px;
+	text-align: left;
+	font-family: Gotham;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(112,112,112,1);
+}
+#Navbar {
+	position: absolute;
+	width: 1920px;
+	height: 73px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Navbar_bi {
+	position: absolute;
+	width: 1920px;
+	height: 73px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Navbar_bj {
+	fill: rgba(255,255,255,1);
+}
+.Navbar_bj {
+	position: absolute;
+	overflow: visible;
+	width: 1920px;
+	height: 73px;
+	left: 0px;
+	top: 0px;
+}
+#Menu {
+	position: absolute;
+	width: 546px;
+	height: 27px;
+	left: 181px;
+	top: 23px;
+	overflow: visible;
+}
+#Home {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 75px;
+	white-space: nowrap;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: view;
+	--web-action-target: Home__1;
+	cursor: pointer;
+	text-align: left;
+	font-family: Gotham;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(112,112,112,1);
+}
+#About {
+	left: 157px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 79px;
+	white-space: nowrap;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: view;
+	--web-action-target: About;
+	cursor: pointer;
+	text-align: left;
+	font-family: Gotham;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(112,112,112,1);
+}
+#Explore {
+	left: 314px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 96px;
+	white-space: nowrap;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: view;
+	--web-action-target: Explore;
+	cursor: pointer;
+	text-align: left;
+	font-family: Gotham;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(112,112,112,1);
+}
+#ROTD {
+	left: 471px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 76px;
+	white-space: nowrap;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: view;
+	--web-action-target: ROTD;
+	cursor: pointer;
+	text-align: left;
+	font-family: Gotham;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(112,112,112,1);
+}
+#Logo {
+	position: absolute;
+	width: 252px;
+	height: 73px;
+	left: 1626px;
+	top: 0px;
+	overflow: visible;
+}
