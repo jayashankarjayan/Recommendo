@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="{{ url_for('static', filename='styles/Books.css')}}" />
+    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="{{ url_for('static', filename='styles/common.css')}}" />
+    <script id="applicationScript" type="text/javascript" src="{{ url_for('static', filename='js/Books.js') }}"></script>
+</head>
+
+<body>
+    <div id="Books">
+        <div id="Trending_Today">
+            <span>Trending Today</span>
+        </div>
+        <div id="Curated_for_you">
+            <span>Curated for you</span>
+        </div>
+        <div id="Trending_Set">
+            <div id="Trend_Card" class="Trend_Card">
+                <img id="Cover_Base" src="{{ url_for('static', filename='Cover_Base.png')}}" srcset="{{ url_for('static', filename='Cover_Base.png')}}, {{ url_for('static', filename='Cover_Base_@2x.png')}}">
+
+                <div id="n_">
+                    <span>1</span>
+                </div>
+            </div>
+            <div id="Trend_Card_y" class="Trend_Card">
+                <img id="Cover_Base_z" src="{{ url_for('static', filename='Cover_Base_z.png') }}" srcset="{{ url_for('static', filename='Cover_Base_z.png') }}, {{ url_for('static', filename='Cover_Base_z@2x.png') }}">
+
+                <div id="n__">
+                    <span>2</span>
+                </div>
+            </div>
+            <div id="Trend_Card_" class="Trend_Card">
+                <img id="Cover_Base_" src="{{ url_for('static', filename='Cover_Base_.png') }}" srcset="{{ url_for('static', filename='Cover_Base_.png') }}, {{ url_for('static', filename='Cover_Base_@2x.png') }}">
+
+                <div id="n__ba">
+                    <span>3</span>
+                </div>
+            </div>
+            <div id="Trend_Card_ba" class="Trend_Card">
+                <img id="Cover_Base_ba" src="{{ url_for('static', filename='Cover_Base_ba.png') }}" srcset="{{ url_for('static', filename='Cover_Base_ba.png') }}, {{ url_for('static', filename='Cover_Base_ba@2x.png') }}">
+
+                <div id="n__bb">
+                    <span>4</span>
+                </div>
+            </div>
+        </div>
+        <div id="Curation_Card_Set">
+            <div id="Curation_Card" class="Curation_Card">
+                <svg class="Full">
+				<rect id="Full" rx="89" ry="89" x="0" y="0" width="485" height="705">
+				</rect>
+			</svg>
+                <img id="Half" src="{{ url_for('static', filename='Half.png') }}" srcset="{{ url_for('static', filename='Half.png') }}, {{ url_for('static', filename='Half@2x.png') }}">
+
+                <div id="One_Of_Us_Is_Lying_Karen_M_McM">
+                    <span>One Of Us Is Lying</span><br/><span style="font-style:normal;font-weight:normal;font-size:18px;">Karen M. McManus<br/></span><br/><span style="font-style:normal;font-weight:normal;font-size:16px;">Five students walk into detention. <br/>Only four make it out alive.</span><br/>
+                    <span style="font-style:normal;font-weight:normal;"></span><br/><span>Genres: </span><span style="font-style:normal;font-weight:normal;font-size:18px;">Mystery, Thriller, YA</span>
+                </div>
+                <div onclick="window.location.href='Book_Solo.html'" id="ReadMoreButton">
+                    <svg class="Rectangle_8">
+					<rect id="Rectangle_8" rx="24.5" ry="24.5" x="0" y="0" width="174" height="49">
+					</rect>
+				</svg>
+                    <div id="Read_More">
+                        <span>Read More</span>
+                    </div>
+                </div>
+            </div>
+            <div id="Curation_Card_bf" class="Curation_Card">
+                <svg class="Full_bg">
+				<rect id="Full_bg" rx="89" ry="89" x="0" y="0" width="485" height="705">
+				</rect>
+			</svg>
+                <img id="Half_bh" src="{{ url_for('static', filename='Half_bh.png') }}" srcset="{{ url_for('static', filename='Half_bh.png') }}, {{ url_for('static', filename='Half_bh@2x.png') }}">
+
+                <div id="The_Hunger_Games_Suzanne_Colli">
+                    <span>The Hunger Games</span><br/><span style="font-style:normal;font-weight:normal;font-size:18px;">Suzanne Collins<br/></span><br/><span style="font-style:normal;font-weight:normal;font-size:16px;">Could you survive on your own in the wild, with every one out to make sure you don't live to see the morning?</span><br/>
+                    <span style="font-style:normal;font-weight:normal;font-size:18px;"></span><br/><span>Genres: </span><span style="font-style:normal;font-weight:normal;font-size:18px;">YA, Thriller, Dystopian</span>
+                </div>
+                <div id="ReadMoreButton_bj">
+                    <svg class="Rectangle_8_bk">
+					<rect id="Rectangle_8_bk" rx="24.5" ry="24.5" x="0" y="0" width="174" height="49">
+					</rect>
+				</svg>
+                    <div id="Read_More_bl">
+                        <span>Read More</span>
+                    </div>
+                </div>
+            </div>
+            <div id="Curation_Card_bm" class="Curation_Card">
+                <svg class="Full_bn">
+				<rect id="Full_bn" rx="89" ry="89" x="0" y="0" width="485" height="705">
+				</rect>
+			</svg>
+                <img id="Half_bo" src="{{ url_for('static', filename='Half_bo.png') }}" srcset="{{ url_for('static', filename='Half_bo.png') }}, {{ url_for('static', filename='Half_bo@2x.png') }}">
+
+                <div id="We_Were_Liars_E_Lockhart__A_gr">
+                    <span>We Were Liars</span><br/><span style="font-style:normal;font-weight:normal;font-size:18px;">E. Lockhart<br/></span><br/><span style="font-style:normal;font-weight:normal;font-size:16px;">A group of four friends—the Liars—whose friendship turns destructive.</span><br/>
+                    <span style="font-style:normal;font-weight:normal;"></span><br/><span>Genres: </span><span style="font-style:normal;font-weight:normal;font-size:18px;">Mystery, Thriller, YA</span>
+                </div>
+                <div id="ReadMoreButton_bq">
+                    <svg class="Rectangle_8_br">
+					<rect id="Rectangle_8_br" rx="24.5" ry="24.5" x="0" y="0" width="174" height="49">
+					</rect>
+				</svg>
+                    <div id="Read_More_bs">
+                        <span>Read More</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Hero_Section" class="Hero_Section">
+            <img id="books" src="{{ url_for('static', filename='books.png') }}" srcset="{{ url_for('static', filename='books.png') }}, {{ url_for('static', filename='books@2x.png') }}">
+
+        </div>
+        <div id="Navbar" class="Navbar">
+            <div id="Navbar_bw">
+                <svg class="Navbar_bx">
+				<rect id="Navbar_bx" rx="0" ry="0" x="0" y="0" width="1920" height="73">
+				</rect>
+			</svg>
+                <div id="Menu">
+                    <div onclick="window.location.href='Home.html'" id="Home">
+                        <span>Home</span>
+                    </div>
+                    <div onclick="window.location.href='About.html'" id="About">
+                        <span>About</span>
+                    </div>
+                    <div onclick="window.location.href='Explore.html'" id="Explore">
+                        <span>Explore</span>
+                    </div>
+                    <div onclick="window.location.href='ROTD.html'" id="ROTD">
+                        <span>ROTD</span>
+                    </div>
+                </div>
+            </div>
+            <img id="Logo" src="{{ url_for('static', filename='Logo.png') }}" srcset="{{ url_for('static', filename='Logo.png') }}, {{ url_for('static', filename='Logo@2x.png') }}">
+
+        </div>
+    </div>
+</body>
+
+</html>

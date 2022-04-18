@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="{{ url_for('static', filename='/styles/Movies.css') }}" />
+    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="{{ url_for('static', filename='/styles/common.css') }}" />
+    <script id="applicationScript" type="text/javascript" src="{{ url_for('static', filename='js/Movies.js') }}"></script>
+</head>
+
+<body>
+    <div id="Movies">
+        <div id="Trending_Today">
+            <span>Trending Today</span>
+        </div>
+        <div id="Curated_for_you">
+            <span>Curated for you</span>
+        </div>
+        <div id="Trending_Set">
+            <div id="Trend_Card" class="Trend_Card">
+                <img id="Poster_Base" src="{{ url_for('static', filename='Poster_Base.png') }}" srcset="{{ url_for('static', filename='Poster_Base.png') }}, {{ url_for('static', filename='Poster_Base@2x.png') }}">
+
+                <div id="n_">
+                    <span>1</span>
+                </div>
+            </div>
+            <div id="Trend_Card_y" class="Trend_Card">
+                <img id="Poster_Base_z" src="{{ url_for('static', filename='Poster_Base_z.png') }}" srcset="{{ url_for('static', filename='Poster_Base_z.png') }}, {{ url_for('static', filename='Poster_Base_z@2x.png') }}">
+
+                <div id="n__">
+                    <span>2</span>
+                </div>
+            </div>
+            <div id="Trend_Card_" class="Trend_Card">
+                <img id="Poster_Base_" src="{{ url_for('static', filename='Poster_Base_.png') }}" srcset="{{ url_for('static', filename='Poster_Base_.png') }}, {{ url_for('static', filename='Poster_Base_.png') }}">
+
+                <div id="n__ba">
+                    <span>3</span>
+                </div>
+            </div>
+            <div id="Trend_Card_ba" class="Trend_Card">
+                <img id="Poster_Base_ba" src="{{ url_for('static', filename='Poster_Base_ba.png') }}" srcset="{{ url_for('static', filename='Poster_Base_ba.png') }}, {{ url_for('static', filename='Poster_Base_ba@2x.png') }}">
+
+                <div id="n__bb">
+                    <span>4</span>
+                </div>
+            </div>
+        </div>
+        <div id="Curation_Card_Set">
+            <div id="Curation_Card" class="Curation_Card">
+                <svg class="Full">
+				<rect id="Full" rx="89" ry="89" x="0" y="0" width="485" height="705">
+				</rect>
+			</svg>
+                <img id="Half" src="{{ url_for('static', filename='Mov.png') }}" srcset="{{ url_for('static', filename='Mov.png') }}, {{ url_for('static', filename='Mov@2x.png') }}">
+
+                <div id="Free_Guy_Shawn_Levy__A_bank_te">
+                    <span>Free Guy</span><br/><span style="font-style:normal;font-weight:normal;font-size:18px;">Shawn Levy<br/></span><br/><span style="font-style:normal;font-weight:normal;font-size:16px;">A bank teller discovers that he's actually an NPC inside a brutal, open world video game.</span><br/>
+                    <span style="font-style:normal;font-weight:normal;"></span><br/><span>Genres: </span><span style="font-style:normal;font-weight:normal;font-size:18px;">Action, Adventure, Comedy</span>
+                </div>
+                <div onclick="window.location.href='Movie_Solo.html'" id="ReadMoreButton">
+                    <svg class="Rectangle_8">
+					<rect id="Rectangle_8" rx="24.5" ry="24.5" x="0" y="0" width="174" height="49">
+					</rect>
+				</svg>
+                    <div id="Read_More">
+                        <span>Read More</span>
+                    </div>
+                </div>
+            </div>
+            <div id="Curation_Card_bf" class="Curation_Card">
+                <svg class="Full_bg">
+				<rect id="Full_bg" rx="89" ry="89" x="0" y="0" width="485" height="705">
+				</rect>
+			</svg>
+                <img id="Half_bh" src="{{ url_for('static', filename='Mov_bh.png') }}" srcset="{{ url_for('static', filename='Mov_bh.png') }}, {{ url_for('static', filename='Mov_bh@2x.png') }}">
+
+                <div id="Ta_Ra_Rum_Pum_Siddharth_Anand_">
+                    <span>Ta Ra Rum Pum</span><br/><span style="font-style:normal;font-weight:normal;font-size:18px;">Siddharth Anand<br/></span><br/><span style="font-style:normal;font-weight:normal;font-size:15px;">Ace car racer RV and his wife have the world at their feet. But an accident turns their world upside down.</span><br/>
+                    <span style="font-style:normal;font-weight:normal;font-size:18px;"></span><br/><span>Genres: </span><span style="font-style:normal;font-weight:normal;font-size:18px;">Comedy, Drama, Family</span>
+                </div>
+                <div id="ReadMoreButton_bj">
+                    <svg class="Rectangle_8_bk">
+					<rect id="Rectangle_8_bk" rx="24.5" ry="24.5" x="0" y="0" width="174" height="49">
+					</rect>
+				</svg>
+                    <div id="Read_More_bl">
+                        <span>Read More</span>
+                    </div>
+                </div>
+            </div>
+            <div id="Curation_Card_bm" class="Curation_Card">
+                <svg class="Full_bn">
+				<rect id="Full_bn" rx="89" ry="89" x="0" y="0" width="485" height="705">
+				</rect>
+			</svg>
+                <img id="Half_bo" src="{{ url_for('static', filename='Mov_bo.png') }}" srcset="{{ url_for('static', filename='Mov_bo.png') }}, {{ url_for('static', filename='Mov_bo@2x.png') }}">
+
+                <div id="Shyam_Singha_Roy_Rahul_Sankrit">
+                    <span>Shyam Singha Roy</span><br/><span style="font-style:normal;font-weight:normal;font-size:18px;">Rahul Sankrityan<br/></span><br/><span style="font-style:normal;font-weight:normal;font-size:16px;">Centers around the theme of reincarnation, unfolding in Kolkata and Hyderabad.</span><br/>
+                    <span style="font-style:normal;font-weight:normal;"></span><br/><span>Genres: </span><span style="font-style:normal;font-weight:normal;">Drama, Romance</span>
+                </div>
+                <div id="ReadMoreButton_bq">
+                    <svg class="Rectangle_8_br">
+					<rect id="Rectangle_8_br" rx="24.5" ry="24.5" x="0" y="0" width="174" height="49">
+					</rect>
+				</svg>
+                    <div id="Read_More_bs">
+                        <span>Read More</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Hero_Section" class="Hero_Section">
+            <img id="movie" src="{{ url_for('static', filename='movie.png') }}" srcset="{{ url_for('static', filename='movie.png') }}, {{ url_for('static', filename='movie@2x.png') }}">
+
+        </div>
+        <div id="Navbar" class="Navbar">
+            <div id="Navbar_bw">
+                <svg class="Navbar_bx">
+				<rect id="Navbar_bx" rx="0" ry="0" x="0" y="0" width="1920" height="73">
+				</rect>
+			</svg>
+                <div id="Menu">
+                    <div onclick="window.location.href='Home.html'" id="Home">
+                        <span>Home</span>
+                    </div>
+                    <div onclick="window.location.href='About.html'" id="About">
+                        <span>About</span>
+                    </div>
+                    <div onclick="window.location.href='Explore.html'" id="Explore">
+                        <span>Explore</span>
+                    </div>
+                    <div onclick="window.location.href='ROTD.html'" id="ROTD">
+                        <span>ROTD</span>
+                    </div>
+                </div>
+            </div>
+            <img id="Logo" src="{{ url_for('static', filename='Logo.png') }}" srcset="{{ url_for('static', filename='Logo.png') }}, {{ url_for('static', filename='Logo@2x.png') }}">
+
+        </div>
+    </div>
+</body>
+
+</html>
