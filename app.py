@@ -69,5 +69,12 @@ def songsolo():
 def tvshowsolo():
     return render_template("TV_Show_Solo.html")
 
+@app.route("/login.html", methods=['POST', 'GET'])
+
+def login():
+    if request.method == 'POST':
+        return render_template("Home.html")
+    else:
+        return render_template("login.html")
 if __name__ == "__main__":
     app.run(debug=True)
