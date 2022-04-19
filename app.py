@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, redirect, url_for
 import pandas as pd
 
 app = Flask(__name__)
@@ -72,9 +72,18 @@ def tvshowsolo():
 @app.route("/login.html", methods=['POST', 'GET'])
 
 def login():
+    error = None
     if request.method == 'POST':
-        return render_template("Home.html")
-    else:
-        return render_template("login.html")
+        if request.form['Uname'] != 'admin' or request.form['Pass'] != 'admin':
+            error = 'Invalid Credentials. Please Try Again'
+        
+        else:
+            return redirect(url_for('Home.html'))
+    
+    return render_template('login.html', error=error)
+
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)

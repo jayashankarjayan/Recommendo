@@ -74,19 +74,25 @@
 <body>
     <h2>Login Page</h2><br>
     <div class="login">
-        <form id="login" method="POST" action="http://localhost:5000/Home.html">
+        <form id="login" method="POST" action="">
             <label><b>User Name     
         </b>    
         </label>
-            <input type="text" name="Uname" id="Uname" placeholder="Username">
+            <input type="text" name="Uname" id="Uname" placeholder="Username" value="{{
+                request.form.Uname }}">
             <br><br>
             <label><b>Password     
         </b>    
         </label>
-            <input type="Password" name="Pass" id="Pass" placeholder="Password">
+            <input type="Password" name="Pass" id="Pass" placeholder="Password" value=" {{
+                request.form.Pass }}">
             <br><br>
             <center><input type="submit" name="log" id="log" value="Login">
         </form>
+
+        {% if error %}
+        <p class="error"><strong>Error: </strong> {{error}}</p>
+        {% endif %}
     </div>
 </body>
 
