@@ -1,16 +1,27 @@
 from flask import Flask, request, render_template, redirect, url_for
-import pandas as pd
+from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import null
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:''@localhost/recommendo_login'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db = SQLAlchemy(app)
 
-ratings = pd.read_csv("ml-latest-small/ratings.csv")
+class User(db.Model):
+    username = db.Column(db.String(50), primary_key = True)
+    password = db.Column(db.String(50), nullable=False)
+
+    def __repr__(self):
+        return '<User %r>' %self.username
 
 
 @app.route('/Home', methods=['POST', 'GET'])
-
 def home():
     return render_template('Home.html')
 
+@app.route('/Home1', methods=['POST', 'GET'])
+def home1():
+    return render_template("Home1.html")
 
 @app.route('/Books', methods=['POST', 'GET']) 
 
@@ -20,7 +31,7 @@ def books():
 @app.route('/Movies', methods=['POST', 'GET'])
 
 def movies():
-    return render_template('Movies.html', ratings=ratings.to_dict())
+    return render_template('Movies.html')
 
 @app.route("/TV_Shows", methods=['POST', 'GET'])
 
@@ -69,18 +80,19 @@ def songsolo():
 def tvshowsolo():
     return render_template("TV_Show_Solo.html")
 
+
+
 @app.route("/Login", methods=['POST', 'GET'])
 
 def login():
-    error = None
     if request.method == 'POST':
-        if request.form['Uname'] != 'admin' or request.form['Pass'] != 'admin':
-            error = 'Invalid Credentials. Please Try Again'
-        
-        else:
-            return redirect(url_for('home'))
-    
-    return render_template('login.html', error=error)
+        username = request.form['Uname']
+        password = request.form['Pass']
+        all_users = User.query.all()
+        print(all_users)
+        return render_template("Home.html")
+    else:
+        return render_template("login.html")
 
 
 
