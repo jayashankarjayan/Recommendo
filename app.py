@@ -19,10 +19,6 @@ class User(db.Model):
 def home():
     return render_template('Home.html')
 
-@app.route('/Home1', methods=['POST', 'GET'])
-def home1():
-    return render_template("Home1.html")
-
 @app.route('/Books', methods=['POST', 'GET']) 
 
 def books():
@@ -88,9 +84,9 @@ def login():
     if request.method == 'POST':
         username = request.form['Uname']
         password = request.form['Pass']
-        all_users = User.query.all()
-        print(all_users)
-        return render_template("Home.html")
+        all_users = User.query.filter_by(username="admin").all()
+        print(all_users.username)
+        return redirect(url_for("home"), all_users=all_users)
     else:
         return render_template("login.html")
 
