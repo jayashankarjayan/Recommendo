@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>Login Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgba(227, 234, 249, 1);
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .login {
+            width: 382px;
+            overflow: hidden;
+            margin: auto;
+            margin: 20 0 0 450px;
+            padding: 80px;
+            background: #ffffff;
+            border-radius: 15px;
+        }
+        
+        h2 {
+            text-align: center;
+            color: rgba(255, 117, 117, 1);
+            padding: 20px;
+        }
+        
+        label {
+            color: rgba(255, 117, 117, 1);
+            font-size: 17px;
+        }
+        
+        #Uname {
+            width: 300px;
+            height: 30px;
+            border: none;
+            border-radius: 3px;
+            padding-left: 8px;
+        }
+        
+        #Pass {
+            width: 300px;
+            height: 30px;
+            border: none;
+            border-radius: 3px;
+            padding-left: 8px;
+        }
+        
+        #log {
+            width: 300px;
+            height: 30px;
+            border: none;
+            border-radius: 17px;
+            padding-left: 7px;
+            color: white;
+            background-color: rgba(255, 117, 117, 1);
+        }
+        
+        span {
+            color: white;
+            font-size: 17px;
+        }
+        
+        a {
+            float: right;
+            /* //background-color: grey;   */
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Login Page</h2><br>
+    <div class="login">
+        <form id="login" method="POST" action="/Home">
+            <label><b>User Name     
+        </b>    
+        </label>
+            <input type="text" name="Uname" id="Uname" placeholder="Username">
+            <br><br>
+            <label><b>Password     
+        </b>    
+        </label>
+            <input type="Password" name="Pass" id="Pass" placeholder="Password">
+            <br><br>
+            <center><input type="submit" name="log" id="log" value="Login">
+        </form>
+
+        {% if error %}
+        <p class="error"><strong>Error: </strong> {{error}}</p>
+        {% endif %}
+    </div>
+</body>
+
+</html>

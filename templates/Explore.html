@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="{{ url_for('static', filename='styles/Explore.css') }}" />
+    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="{{ url_for('static', filename='styles/common.css') }}" />
+    <script id="applicationScript" type="text/javascript" src="{{ url_for( 'static', filename='js/Explore.js' ) }} "></script>
+</head>
+
+<body>
+    <div id="Navbar " class="Navbar ">
+        <div id="Navbar_ ">
+            <svg class="Navbar_ba ">
+			<rect id="Navbar_ba " rx="0 " ry="0 " x="0 " y="0 " width="1920 " height="73 ">
+			</rect>
+		</svg>
+            <div id="Menu ">
+                <div onclick="window.location.href='Home' " id="Home ">
+                    <span>Home</span>
+                </div>
+                <div onclick="window.location.href='About' " id="About ">
+                    <span>About</span>
+                </div>
+                <div onclick="window.location.href='Explore' " id="Explore_ ">
+                    <span>Explore</span>
+                </div>
+                <div onclick="window.location.href='ROTD' " id="ROTD ">
+                    <span>ROTD</span>
+                </div>
+            </div>
+        </div>
+        <div id="Explore ">
+            <div id="Search_Group ">
+                <div id="Search_for_your_favourite_titl ">
+                    <span>Search for your favourite title</span>
+                </div>
+                <div id="and_we_will_provide_you_with_r ">
+                    <span>and we will provide you with </span><span style="font-style:normal;font-weight:bold; ">recommendos</span><span> similar to it, that you are guaranteed to enjoy!</span>
+                </div>
+                <div id="Searchbar ">
+                    <svg class="Searchbox ">
+				<rect id="Searchbox " rx="59.5 " ry="59.5 " x="0 " y="0 " width="1704 " height="119 ">
+				</rect>
+			</svg>
+                    <div id="Magnifying_Glass ">
+                        <svg class="Ellipse_1 ">
+					<ellipse id="Ellipse_1 " rx="19.918825149536133 " ry="19.918825149536133 " cx="19.918825149536133 " cy="19.918825149536133 ">
+					</ellipse>
+				</svg>
+                        <svg class="Line_1 " viewBox="0 0 11.382 14.544 ">
+					<path id="Line_1 " d="M 0 0 L 11.38218593597412 14.54390430450439 ">
+					</path>
+				</svg>
+                    </div>
+                </div>
+            </div>
+
+            <img id="Logo " src="{{ url_for('static', filename='Logo.png') }} " srcset="{{ url_for('static', filename='Logo.png') }}, {{ url_for('static', filename='Logo@2x.png') }}">
+
+        </div>
+    </div>
+</body>
+
+</html>

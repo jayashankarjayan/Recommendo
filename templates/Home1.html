@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="{{ url_for('static', filename='styles/Home.css') }}" />
+    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="{{ url_for('static', filename='styles/common.css') }}" />
+    <script id="applicationScript" type="text/javascript" src="{{ url_for('static', filename='js/Home.js') }}"></script>
+</head>
+
+<body>
+    <div id="Home">
+        <svg class="Hero_section">
+		<rect id="Hero_section" rx="60" ry="60" x="0" y="0" width="1704" height="360">
+		</rect>
+	</svg>
+        <div id="Category_Cards">
+            <div id="Master_Card" class="Master_Card">
+                <svg class="Card_base">
+				<rect id="Card_base" rx="41" ry="41" x="0" y="0" width="291" height="339">
+				</rect>
+			</svg>
+                <div onclick="window.location.href='Books.html'" id="Button">
+                    <svg class="btn">
+					<rect id="btn" rx="21" ry="21" x="0" y="0" width="128" height="42">
+					</rect>
+				</svg>
+                    <div id="Visit">
+                        <span>Visit</span>
+                    </div>
+                </div>
+                <div id="Not_sure_about_what_to_read_ne">
+                    <span>Not sure about what to read next? Don't worry, we got you covered.</span>
+                </div>
+                <div id="Books">
+                    <span>Books</span>
+                </div>
+                <img id="OOUIL_2" src="{{ url_for('static', filename='OOUIL_2.png')}}" srcset="{{ url_for('static', filename='OOUIL_2.png')}}, {{ url_for('static', filename='OOUIL_2@2x.png')}}">
+
+            </div>
+            <div id="Card_2" class="Card_2">
+                <svg class="Card_base_">
+				<rect id="Card_base_" rx="41" ry="41" x="0" y="0" width="291" height="339">
+				</rect>
+			</svg>
+                <div onclick="window.location.href='Movies.html'" id="Button_">
+                    <svg class="btn_">
+					<rect id="btn_" rx="21" ry="21" x="0" y="0" width="128" height="42">
+					</rect>
+				</svg>
+                    <div id="Visit_">
+                        <span>Visit</span>
+                    </div>
+                </div>
+                <div id="Obsessed_with_a_movie_so_much_">
+                    <span>Obsessed with a movie so much that you want more? We've been there.</span>
+                </div>
+                <div id="Movies">
+                    <span>Movies</span>
+                </div>
+                <img id="Free_Guy" src="{{ url_for('static', filename='OOUIL_2.png')}}, {{ url_for('static', filename='OOUIL_2@2x.png')}}" srcset="{{ url_for('static', filename='Free_Guy.png')}}, {{ url_for('static', filename='Free_Guy@2x.png')}}">
+
+            </div>
+            <div id="Card_3" class="Card_3">
+                <svg class="Card_base_bb">
+				<rect id="Card_base_bb" rx="41" ry="41" x="0" y="0" width="291" height="339">
+				</rect>
+			</svg>
+                <div onclick="window.location.href='TV_Shows.html'" id="Button_bc">
+                    <svg class="btn_bd">
+					<rect id="btn_bd" rx="21" ry="21" x="0" y="0" width="128" height="42">
+					</rect>
+				</svg>
+                    <div id="Visit_be">
+                        <span>Visit</span>
+                    </div>
+                </div>
+                <div id="Binged_through_all_seasons_of_">
+                    <span>Binged through all seasons of your comfort show? It's time to move on now, buddy.</span>
+                </div>
+                <div id="TV_Shows">
+                    <span>TV Shows</span>
+                </div>
+                <img id="B99" src="{{ url_for('static', filename='B99.png')}}" srcset="{{ url_for('static', filename='B99.png')}}, {{ url_for('static', filename='B99@2x.png')}}">
+
+            </div>
+            <div id="Card_4" class="Card_4">
+                <svg class="Card_base_bj">
+				<rect id="Card_base_bj" rx="41" ry="41" x="0" y="0" width="291" height="339">
+				</rect>
+			</svg>
+                <div onclick="window.location.href='Music.html'" id="Button_bk">
+                    <svg class="btn_bl">
+					<rect id="btn_bl" rx="21" ry="21" x="0" y="0" width="128" height="42">
+					</rect>
+				</svg>
+                    <div id="Visit_bm">
+                        <span>Visit</span>
+                    </div>
+                </div>
+                <div id="Recently_discovered_an_artist_">
+                    <span>Recently discovered an artist that you can't get enough of? We can help.</span>
+                </div>
+                <div id="Music">
+                    <span>Music</span>
+                </div>
+                <img id="CP_NTM" src="{{ url_for('static', filename='CP_NTM.png')}}" srcset="{{ url_for('static', filename='CP_NTM.png')}}, {{ url_for('static', filename='CP_NTM@2x.png')}}">
+
+            </div>
+        </div>
+        <div id="Categories">
+            <span>Categories</span>
+        </div>
+        <div id="Navbar" class="Navbar">
+            <div id="Navbar_bs">
+                <svg class="Navbar_bt">
+				<rect id="Navbar_bt" rx="0" ry="0" x="0" y="0" width="1920" height="73">
+				</rect>
+			</svg>
+                <div id="Menu">
+                    <div onclick="window.location.href='Home'" id="Home_bv">
+                        <span>Home</span>
+                    </div>
+                    <div onclick="window.location.href='About'" id="About">
+                        <span>About</span>
+                    </div>
+                    <div onclick="window.location.href='Explore'" id="Explore">
+                        <span>Explore</span>
+                    </div>
+                    <div onclick="window.location.href='ROTD'" id="ROTD">
+                        <span>ROTD</span>
+                    </div>
+                </div>
+            </div>
+            <!-- <img id="Logo" src="{{ url_for('static', filename='Logo.png')}}" srcset="{{ url_for('static', filename='Logo.png')}}, {{ url_for('static', filename='Logo@2x.png')}}"> -->
+            <p>Hello User!</p>
+
+        </div>
+        <div id="Full_Logo" class="Full_Logo">
+            <div id="Logo_b">
+                <svg class="Logo_Base">
+				<rect id="Logo_Base" rx="33" ry="33" x="0" y="0" width="274" height="140">
+				</rect>
+			</svg>
+                <svg class="Rec_Btn">
+				<ellipse id="Rec_Btn" rx="34" ry="34" cx="34" cy="34">
+				</ellipse>
+			</svg>
+                <div id="REC">
+                    <span>REC</span>
+                </div>
+            </div>
+            <div id="OMMENDO">
+                <span>OMMENDO</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

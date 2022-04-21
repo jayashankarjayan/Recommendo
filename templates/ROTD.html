@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROTD</title>
+    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="{{ url_for('static', filename='styles/ROTD.css') }}" />
+    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="{{ url_for('static', filename='styles/common.css') }}" />
+    <script id="applicationScript" type="text/javascript" src="{{ url_for('static', filename='js/ROTD.js') }}"></script>
+</head>
+
+<body>
+    <div id="ROTD">
+        <div id="ROTD_Title">
+            <div id="Recommendos_of_the_day">
+                <span>Recommendos of the day</span>
+            </div>
+            <div id="Daily_Recommendos_for_you_Fres">
+                <span>Daily</span><span style="font-style:normal;font-weight:bold;"> Recommendos</span><span> for you. Fresh out of the oven. </span>
+            </div>
+        </div>
+        <div id="ROTD_Recs">
+            <div id="Book_Rec">
+                <div id="Book">
+                    <span>Book</span>
+                </div>
+                <div id="Poster_card" class="Poster_card">
+                    <svg class="poster">
+					<rect id="poster" rx="41" ry="41" x="0" y="0" width="287" height="432">
+					</rect>
+				</svg>
+                    <img id="imghere" src="{{ url_for('static', filename='imghere.png') }}" srcset="{{ url_for('static', filename='imghere.png') }}, {{ url_for('static', filename='imghere@2x.png') }}">
+
+                    <div id="Kaz_is_offered_a_chance_at_a_d">
+                        <span>Kaz is offered a chance at a deadly heist that could make him rich beyond his wildest dreams. But he can’t pull it off alone.<br/><br/>Kaz’s crew is the only thing that might stand between the world and destruction—if they don’t kill each other first.</span>
+                    </div>
+                </div>
+            </div>
+            <div id="Movie_Rec">
+                <div id="Movie">
+                    <span>Movie</span>
+                </div>
+                <div id="Poster_card_" class="Poster_card">
+                    <svg class="poster_">
+					<rect id="poster_" rx="41" ry="41" x="0" y="0" width="287" height="432">
+					</rect>
+				</svg>
+                    <img id="O11" src="{{ url_for('static', filename='O11.png') }}" srcset="{{ url_for('static', filename='O11.png') }}, {{ url_for('static', filename='O11@2x.png') }}">
+
+                    <div id="Danny_Ocean_wants_to_score_the">
+                        <span>Danny Ocean wants to score the biggest heist in history. He combines an eleven member team, including Frank Catton, Rusty Ryan and Linus Caldwell. <br/><br/>Their target? The Bellagio, the Mirage and the MGM Grand. <br/><br/>All casinos owned by Terry Benedict.</span>
+                    </div>
+                </div>
+            </div>
+            <div id="TV_Show_Rec">
+                <div id="TV_Show">
+                    <span>TV Show</span>
+                </div>
+                <div id="Poster_card_ba" class="Poster_card">
+                    <svg class="poster_bb">
+					<rect id="poster_bb" rx="41" ry="41" x="0" y="0" width="287" height="432">
+					</rect>
+				</svg>
+                    <img id="suits" src="{{ url_for('static', filename='suits.png') }}" srcset="{{ url_for('static', filename='suits.png') }}, {{ url_for('static', filename='suits@2x.png') }}">
+
+                    <div id="While_running_from_a_drug_deal">
+                        <span>While running from a drug deal gone bad, brilliant young college-dropout Mike Ross slips into a job interview with one of New York City's best legal closers, Harvey Specter.<br/> <br/>Tired of cookie-cutter law school grads, Harvey takes a gamble by hiring Mike on the spot after recognizing his raw talent and photographic memory.<br/><br/>Mike and Harvey are a winning team.</span>
+                    </div>
+                </div>
+            </div>
+            <div id="Song_Rec">
+                <div id="Song">
+                    <span>Song</span>
+                </div>
+                <div id="Poster_card_bg" class="Poster_card">
+                    <svg class="poster_bh">
+					<rect id="poster_bh" rx="41" ry="41" x="0" y="0" width="287" height="432">
+					</rect>
+				</svg>
+                    <img id="akuthu" src="{{ url_for('static', filename='akuthu.png') }}" srcset="{{ url_for('static', filename='akuthu.png') }}, {{ url_for('static', filename='akuthu@2x.png') }}">
+
+                    <div id="Halamithi_Habibo_is_a_recent_T">
+                        <span>Halamithi Habibo is a recent Tamil song from the movie Beast performed by Anirudh Ravichander and Jonita Gandhi with music composed by Anirudh Ravichander and lyrics written by SivaKarthikeyan.</span><br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Navbar" class="Navbar">
+            <div id="Navbar_bl">
+                <svg class="Navbar_bm">
+				<rect id="Navbar_bm" rx="0" ry="0" x="0" y="0" width="1920" height="73">
+				</rect>
+			</svg>
+                <div id="Menu">
+                    <div onclick="window.location.href='Home'" id="Home">
+                        <span>Home</span>
+                    </div>
+                    <div onclick="window.location.href='About'" id="About">
+                        <span>About</span>
+                    </div>
+                    <div onclick="window.location.href='Explore'" id="Explore">
+                        <span>Explore</span>
+                    </div>
+                    <div onclick="window.location.href='ROTD'" id="ROTD_br">
+                        <span>ROTD</span>
+                    </div>
+                </div>
+            </div>
+            <img id="Logo" src="{{ url_for('static', filename='Logo.png') }}" srcset="{{ url_for('static', filename='Logo.png') }}, {{ url_for('static', filename='Logo@2x.png') }}">
+
+        </div>
+    </div>
+</body>
+
+</html>
