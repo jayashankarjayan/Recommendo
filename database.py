@@ -1,13 +1,13 @@
-from venv import create
 from sqlalchemy import create_engine
-from sqlalchemy.orm import scoped_session, sessionmaker
-from sqlalchemy.ext.declarative import declarative_base
+import string 
+import random
 
-engine = create_engine('sqlite:////tmp/recommendo.db', convert_unicode = True)
-db_session = scoped_session(sessionmaker(autocommit=False,
-                                            autoflush=False,
-                                            bind=engine))
-                                        
-Base = declarative_base()
-Base.query = db_session.query_property()
+S = 6
+my_conn = create_engine("mysql://root:@localhost/recommendo_login")
 
+for i in range(1000):
+    uname = ''.join(random.choices(string.ascii_uppercase + string.digits, k = S))
+    pwd = ''.join(random.choices(string.ascii_uppercase + string.digits, k = S))
+    query = my_conn.execute("INSERT INTO  `recommendo_login`.`user` (`username` ,`password`) \
+                  VALUES (", uname, ", ", pwd, "))")
+    
