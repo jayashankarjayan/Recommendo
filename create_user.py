@@ -1,10 +1,8 @@
-from passlib.hash import sha256_crypt
-from app import User, db
+import hashlib
+from models.entity import User
+from utils.connection import session
 
-from sqlalchemy.orm import Session, sessionmaker
-
-session = Session(bind=db.engine)
-passw = 'admin'
-user = User(username="admin", password=sha256_crypt.encrypt("admin"))
+passw = hashlib.md5("admin".encode("UTF-8")).hexdigest()
+user = User(username="admin", password=passw)
 session.add(user)
 session.commit()
