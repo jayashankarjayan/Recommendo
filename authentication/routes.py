@@ -23,4 +23,6 @@ def validate_user():
 
 @AUTH_BLUEPRINT.route("/logout", methods=['GET'])
 def logout():
-    return render_template(LOGIN_PAGE)
+    response = make_response(render_template(LOGIN_PAGE))
+    response.set_cookie("recommendo_user_active", "False")
+    return response
