@@ -14,7 +14,7 @@ class UserOperations:
         if password != password_confirmation:
             raise PasswordMismatch("Two passwords do not match")
 
-        newuser = User(username=username, password=password)
+        newuser = User(username=username, password=password, authenticated=False)
         session.add(newuser)
         session.commit()
         status = True

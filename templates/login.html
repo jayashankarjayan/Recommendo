@@ -92,8 +92,8 @@
             <br><br>
             <center><input type="submit" name="log" id="log" value="Login">
         </form>
-        <br><br> {% if error %}
-        <p class="error"><strong>Error: </strong> {{error}}</p>
+        <br><br> {% if error == True %}
+        <p class="error"><strong>Error: </strong> {{message}}</p>
         {% endif %}
     </div>
 </body>

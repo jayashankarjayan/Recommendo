@@ -1,12 +1,13 @@
 from flask import Blueprint, render_template, \
                   request, make_response
+from models.entity import User
 
 from user.user import UserOperations
 
 AUTH_BLUEPRINT = Blueprint("authentication_routes", __name__, template_folder="templates")
 LOGIN_PAGE = "login.html"
 
-@AUTH_BLUEPRINT.route("/login", methods=['GET'])
+@AUTH_BLUEPRINT.route("/Login", methods=['GET'])
 def display_login_page():
     return render_template(LOGIN_PAGE)
 
@@ -18,6 +19,7 @@ def validate_user():
         response.set_cookie("recommendo_user_active", "True")
         return response
     else:
+        print(request.form)
         message = "Invalid username or password"
         return render_template(LOGIN_PAGE, message=message, error=True)
 
