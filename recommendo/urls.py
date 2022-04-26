@@ -23,7 +23,7 @@ router = routers.DefaultRouter()
 
 
 urlpatterns = [
-    path('books/genre', views.Genre.as_view(), name="default_page"),
-    path('books/genre/<str:genre>', views.Genre.as_view(), name="genre_recommendation"),
-    path('books/synopsis/<str:synopsis>', views.Synopsis.as_view(), name="synopsis_recommendation")
+    path('genre', views.Genre.as_view(), name="default_page"),
+    path('genre/<str:genre>', views.Genre.as_view(), name="genre_recommendation"),
+    path('synopsis/<str:synopsis>', views.Synopsis.as_view(), name="synopsis_recommendation")
 ]
