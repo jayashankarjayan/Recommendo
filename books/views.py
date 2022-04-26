@@ -21,7 +21,7 @@ class Genre(APIView):
     def get(self, request, genre=None):
         if genre is None:
             genre = random.choice(Genre.get_unique_genres())
-
+        
         query_vector = model.encode([genre]).flatten().tolist()
 
         SEARCH_PAYLOAD["query"]["script_score"]["script"]["source"] = SEARCH_PAYLOAD["query"]["script_score"]["script"]["source"].format("genre_enc")
@@ -37,11 +37,13 @@ class Genre(APIView):
                 name = record["_source"]["name"]
                 genre = record["_source"]["genre"]
                 synopsis = record["_source"]["synopsis"]
-                records.append({"name": name, "genre": genre, "synopsis": synopsis})
+                object_type = record["_source"]["object_type"]
+                records.append({"name": name, "genre": genre, "synopsis": synopsis,
+                                "object_type": object_type})
         else:
             genres = Genre.get_unique_genres()
 
-        return Response({'books': records, "genres": genres})
+        return Response({'objects': records, "genres": genres})
 
     @staticmethod
     def get_unique_genres():
@@ -70,6 +72,8 @@ class Synopsis(APIView):
             name = record["_source"]["name"]
             genre = record["_source"]["genre"]
             synopsis = record["_source"]["synopsis"]
-            records.append({"name": name, "genre": genre, "synopsis": synopsis})
+            object_type = record["_source"]["object_type"]
+            records.append({"name": name, "genre": genre, "synopsis": synopsis,
+                            "object_type": object_type})
 
-        return Response({'books': records})
+        return Response({'objects': records})
